@@ -73,3 +73,13 @@ void reverse(char s[])
     for (i = 0, j = str_len(s) - 1; i < j; i++, j--)
 	swap(&s[i], &s[j]);
 }
+
+int atoi(char *s)
+{
+    int res = 0, i;
+
+    for (i = 0; *(s + i) != '\0'; i++)
+	res = res * 10 + *(s + i) - '\0';
+
+    return res
+}
