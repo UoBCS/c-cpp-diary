@@ -1,9 +1,13 @@
-/**
+/*
  * strlib - A string manipulation library for educational purposes
  *
- * Author: Ossama Edbali <ossedb@gmail.com>
- * MIT License
+ * Ossama Edbali <ossedb@gmail.com>
+ * MIT License 2016
+ *
  */
+
+#include "strlib.h"
+#include "../util.h"
 
 int str_len(char s[])
 {
@@ -29,14 +33,6 @@ int str_cmp(char *s, char *t)
     }
     
     return l1 > l2 ? 1 : ((l1 < l2) ? -1 : 0);
-}
-
-int lower(int c)
-{
-    if (c >= 'A' && c <= 'Z')
-        return c + 'a' - 'A';
-    else
-        return c;
 }
 
 void squeeze(char s[], char c)
@@ -75,9 +71,5 @@ void reverse(char s[])
     int c, i, j;
 
     for (i = 0, j = str_len(s) - 1; i < j; i++, j--)
-    {
-        c = s[i];
-        s[i] = s[j];
-	s[j] = c;
-    }
+	swap(&s[i], &s[j]);
 }
