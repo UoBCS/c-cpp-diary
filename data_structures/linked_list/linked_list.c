@@ -27,10 +27,6 @@ void push1(node_t **head, int data)
     *head = new_node;
 }
 
-/*Take the next item that the head points to and save it
-Free the head item
-Set the head to be the next item that we've stored on the side*/
-
 int pop(node_t **head)
 {
     int retval = -1;
