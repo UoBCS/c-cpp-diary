@@ -4,7 +4,7 @@
 
 typedef struct node {
     int data;
-    node *next;
+    struct node *next;
 } node_t;
 
 int count(node_t *head);
