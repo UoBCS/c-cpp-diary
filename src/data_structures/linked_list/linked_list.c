@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "linked_list.h"
+#include "data_structures/linked_list.h"
 
 int count(node_t *head)
 {

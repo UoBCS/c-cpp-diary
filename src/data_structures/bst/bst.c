@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#include "bst.h"
+#include "data_structures/bst.h"
 
 bst_t *mktree(int val, bst_t *right, bst_t *left)
 {

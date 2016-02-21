@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-#include "stack.h"
+#include "data_structures/stack.h"
 
 void push(int *s, int v)
 {

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "dynamic_array.h"
+#include "data_structures/dynamic_array.h"
 
 void d_arr_init(d_arr *arr)
 {
